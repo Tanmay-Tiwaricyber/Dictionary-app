@@ -141,3 +141,53 @@ button:hover {
       font-size: 0.9rem;
   }
 }
+
+/* Developer Card Styles */
+.developer-card {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 250px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+.developer-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.developer-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.developer-name {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+}
+
+.developer-role {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.developer-info a {
+  text-decoration: none;
+  color: #007BFF;
+  font-size: 14px;
+}
+
+.developer-info a:hover {
+  text-decoration: underline;
+}
+
