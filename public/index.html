@@ -14,13 +14,15 @@
 </head>
 <body>
     <div class="container">
-        <h1><img src="dictionary.svg" height="100px" alt="logo pic">Dictionary App</h1>
-        <input type="text" id="wordInput" placeholder="Enter a word">
-        <button id="searchButton">Search</button>
-        <div id="loading" style="display: none;">Loading...</div>
-        <div id="definition"></div>
-        <br>
+        <h1 class="app-title"><img src="dictionary.svg" height="80px" alt="Dictionary Logo">Dictionary App</h1>
+        <div class="search-container">
+            <input type="text" id="wordInput" placeholder="Enter a word">
+            <button id="searchButton">Search</button>
+        </div>
+        <div id="loading" class="loading-spinner" style="display: none;"></div>
+        <div id="definition" class="definition-container"></div>
     </div>
     <script src="script.js"></script>
+    <script src="effect.js"></script>
 </body>
 </html>
