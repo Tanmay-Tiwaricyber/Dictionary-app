@@ -6,31 +6,38 @@
     <meta name="description" content="A simple and modern dictionary app built with Node.js, Express.js, HTML, CSS, and JavaScript. Search for word definitions effortlessly.">
     <meta name="keywords" content="dictionary, app, words, definitions, search, Node.js, Express.js, HTML, CSS, JavaScript">
     <meta name="author" content="Your Name">
-    <meta name="robots" content="index, follow">
     <meta property="og:title" content="Dictionary App">
     <meta property="og:description" content="A simple and modern dictionary app built with Node.js, Express.js, HTML, CSS, and JavaScript. Search for word definitions effortlessly.">
     <title>Dictionary App</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <h1 class="app-title"><img src="dictionary.svg" height="80px" alt="Dictionary Logo">Dictionary App</h1>
+        <h1 class="app-title">
+            <img src="dictionary.svg" height="80px" alt="Dictionary Logo">
+            <span>Dictionary App</span>
+        </h1>
+
         <div class="search-container">
-            <input type="text" id="wordInput" placeholder="Enter a word">
-            <button id="searchButton">Search</button>
+            <input type="text" id="wordInput" placeholder="Enter a word" class="cute-input">
+            <button id="searchButton" class="cute-button"><i class="fas fa-search"></i> Search</button>
+            <button id="wordOfTheDayButton" class="cute-button"><i class="fas fa-star"></i> Word of the Day</button>
         </div>
+        <br>
         <div id="loading" class="loading-spinner" style="display: none;"></div>
-        <div id="definition" class="definition-container"></div>
+        <div class="container">
+            <div id="definition" class="definition-container"></div>
+        </div>
+        
     </div>
 
     <!-- Developer Detail Card -->
     <div class="developer-card">
         <img src="developer.jpg" alt="Developer Photo" class="developer-photo">
         <div class="developer-info">
-            <p class="developer-name">Developer Info</p>
-            <p class="developer-role">Tanmay Tiwari</p>
-            <!-- <p class="developer-role">Full-Stack Developer</p> -->
-            <!-- <a href="https://yourwebsite.com" target="_blank">Visit My Website</a> -->
+            <p class="developer-name">Mayank Tiwari</p>
+            <p class="developer-role">Full-Stack Developer</p>
         </div>
     </div>
 
